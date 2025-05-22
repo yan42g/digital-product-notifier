@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
             <label for="dpum-file-name"><?php _e('Nom du fichier a rechercher :', 'digital-product-notifier'); ?></label>
             <input type="text" id="dpum-file-name" name="file_name" placeholder="Agenda Planner 2025" class="regular-text" value="<?php echo esc_attr($pre_search); ?>">
             <p class="description"><?php _e('Entrez exactement le nom qui apparait dans la colonne "Nom" de vos fichiers telechargeables.', 'digital-product-notifier'); ?></p>
-            <p><a href="<?php echo admin_url('admin.php?page=digital-planner-update-manager-debug'); ?>"><?php _e('Voir la liste de tous les noms de fichiers disponibles', 'digital-product-notifier'); ?></a></p>
+            <p><a href="<?php echo admin_url('admin.php?page=digital-product-notifier-files'); ?>"><?php _e('Voir la liste de tous les noms de fichiers disponibles', 'digital-product-notifier'); ?></a></p>
         </div>
         
         <div class="dpum-form-actions">

@@ -10,19 +10,19 @@ function dpum_add_admin_menu() {
         __('Notificateur de produits numériques', 'digital-product-notifier'),
         __('Notifications Produits', 'digital-product-notifier'),
         'manage_woocommerce',
-        'digital-product-notifier', // URL de la page
-        'dpum_admin_page', // ← Fonction reste identique
+        'digital-product-notifier', // URL de la page principale
+        'dpum_admin_page',
         'dashicons-email-alt',
         57
     );
     
-    // Page de debogage
+    // Page de liste des fichiers (anciennement debug)
     add_submenu_page(
         'digital-product-notifier',
         __('Liste des fichiers', 'digital-product-notifier'),
         __('Liste des fichiers', 'digital-product-notifier'),
         'manage_woocommerce',
-        'digital-product-notifier-files',
+        'digital-product-notifier-files', // URL de la sous-page
         'dpum_debug_page'
     );
 }
@@ -95,7 +95,7 @@ function dpum_admin_page() {
     include(DPUM_PLUGIN_DIR . 'templates/admin-page.php');
 }
 
-// Page de debogage pour voir tous les noms de fichiers
+// Page de liste des fichiers (anciennement debug)
 function dpum_debug_page() {
     // Charger le template
     include(DPUM_PLUGIN_DIR . 'templates/debug-page.php');
