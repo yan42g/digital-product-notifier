@@ -1,0 +1,40 @@
+
+        .dpum-admin-container {
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        
+        .dpum-form-group {
+            margin-bottom: 20px;
+        }
+        
+        .dpum-form-actions {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .dpum-form-actions .spinner {
+            float: none;
+            margin-left: 10px;
+        }
+        
+        .dpum-orders-table-wrapper {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+        
+        .dpum-orders-table th {
+            font-weight: 600;
+        }
+        
+        .dpum-orders-count {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        #dpum-results-message {
+            padding: 10px 15px;
+        }
+        
