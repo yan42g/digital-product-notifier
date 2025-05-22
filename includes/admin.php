@@ -4,25 +4,23 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-// Ajouter la page d'administration
+// Ajouter la page d'administration dans le menu WooCommerce
 function dpum_add_admin_menu() {
-    add_menu_page(
-        __('Notificateur de produits numériques', 'digital-product-notifier'),
-        __('Notifications Produits', 'digital-product-notifier'),
+    add_submenu_page(
+        'woocommerce',
+        __('Notifications', 'digital-product-notifier'),
+        __('Notifications', 'digital-product-notifier'),
         'manage_woocommerce',
-        'digital-product-notifier', // URL de la page principale
-        'dpum_admin_page',
-        'dashicons-email-alt',
-        57
+        'digital-product-notifier',
+        'dpum_admin_page'
     );
     
-    // Page de liste des fichiers (anciennement debug)
     add_submenu_page(
-        'digital-product-notifier',
+        'woocommerce',
         __('Liste des fichiers', 'digital-product-notifier'),
         __('Liste des fichiers', 'digital-product-notifier'),
         'manage_woocommerce',
-        'digital-product-notifier-files', // URL de la sous-page
+        'digital-product-notifier-files',
         'dpum_debug_page'
     );
 }
